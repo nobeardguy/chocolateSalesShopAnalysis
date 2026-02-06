@@ -17,7 +17,7 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
 
- -- CREATE VIEW chocoshop_analysis AS 
+ -- CREATE VIEW chocoshop_analysis AS
    
  SELECT * FROM chocoshop3;
                             -- TOTAL SALES BY PRODUCT
@@ -26,7 +26,7 @@ IGNORE 1 LINES;
  GROUP BY Product
  ORDER BY Total_sales DESC;
                    
-                     -- ADDED A CATEGORY ROW
+                     -- ADDED A CATEGORY COLUMN
  ALTER TABLE chocoshop3 ADD Category VARCHAR(50);
  UPDATE chocoshop3 
  SET Category = CASE
