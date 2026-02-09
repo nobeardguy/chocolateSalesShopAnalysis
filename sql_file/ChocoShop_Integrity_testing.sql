@@ -8,6 +8,7 @@ WHERE `Date`= 0;
 DESCRIBE chocoshop3;    -- seeing date column as date type was satisfying
 
                            -- total imported rows were 3282 (correct data)
+                           -- zero missing rows
 SELECT count(product) AS Total_rows
 FROM chocoshop3;
  
